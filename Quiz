@@ -1,0 +1,218 @@
+import java.util.Arrays;
+public class Quiz{
+    //This is the class.
+    public static void main(String args[]){
+        int choiceTwo = 0;
+        //Selects the choice to view results or exits the quiz.
+        int score = 0;
+        //Stores the score on the quiz.
+        int choiceOne = 0;
+        //Selects the choice to begin or exit the quiz.
+        int wrong;
+        
+        do{
+            
+        
+        System.out.println("Welcome To An Educational Quiz.");
+        System.out.println("");
+        System.out.println("This Quiz Has 10 Questions.");
+        System.out.println("");
+        System.out.println("If You Get 5 Out Of 10 Correct, You Passed.");
+        System.out.println("");
+        System.out.println("1. Begin The Quiz");
+        System.out.println("2. Exit");
+        choiceOne=Keyboard.readInt();
+        //The menu of the quiz.
+        
+        switch(choiceOne){
+                case 1:
+        String array[] = new String[10];    
+            
+        System.out.println("Question 1: What Does WWW Stand For?");
+        System.out.println("");
+        System.out.println("A: World Worm Web");
+        System.out.println("B: World Wide Web");
+        System.out.println("C: World Word Web");
+        System.out.println("D: None Of The Above");
+        System.out.println("");
+        String one = Keyboard.readString();
+        //First question.
+        
+        if(one.equalsIgnoreCase("B")){score++; array[0] = "You Got Question 1 Correct";
+        }else array[0] = "The Correct Answer To Question 1 Was 'B: World Wide Web'";
+    
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 2: What Is Used To Communicate From One City To Another?");
+        System.out.println("");
+        System.out.println("A: WAN");
+        System.out.println("B: MAN");
+        System.out.println("C: LAN");
+        System.out.println("D: All Of The Above");
+        System.out.println("");
+        String two = Keyboard.readString();
+        //Second question.
+        
+        if(two.equalsIgnoreCase("A")){score++; array[1] = "You Got Question 2 Correct";      
+        }else array[1] = "The Correct Answer To Question 2 Was 'A: WAN'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 3: What Do You Call A Group Of Independent Computers Attached To One Another Through Communication Media?");
+        System.out.println("");
+        System.out.println("A: Internet");
+        System.out.println("B: E-mail");
+        System.out.println("C: Network");
+        System.out.println("D: All Of The Above");
+        System.out.println("");
+        String three = Keyboard.readString();
+        //Third question.
+        
+        if(three.equalsIgnoreCase("C")){score++; array[2] = "You Got Question 3 Correct";      
+        }else array[2] = "The Correct Answer To Question 3 Was 'C: Network'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 4: Speedometer Is An Example Of ____ Computers.");
+        System.out.println("");
+        System.out.println("A: Hybrid");
+        System.out.println("B: Digital");
+        System.out.println("C: Analog");
+        System.out.println("D: None Of The Above");
+        System.out.println("");
+        String four = Keyboard.readString();
+        //Fourth question.
+        
+        if(four.equalsIgnoreCase("C")){score++; array[3] = "You Got Question 4 Correct";
+        }else array[3] = "The Correct Answer To Question 4 Was 'C: Analog'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 5: Which Of The Following Is Used To View Web Pages?");
+        System.out.println("");
+        System.out.println("A: Web Browser");
+        System.out.println("B: Internet Browser");
+        System.out.println("C: Page Browser");
+        System.out.println("D: All Of The Above");
+        System.out.println("");
+        String five = Keyboard.readString();
+        //Fifth question.
+        
+        if(five.equalsIgnoreCase("A")){score++; array[4] = "You Got Question 5 Correct";
+        }else array[4] = "The Correct Answer To Question 5 Was 'A: Web Browser'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 6: Which Of The Following Is Used To Save The Frequently Visited Websites?");
+        System.out.println("");
+        System.out.println("A: Frequent List");
+        System.out.println("B: Favourites List");
+        System.out.println("C: Explorer List");
+        System.out.println("D: None Of The Above");
+        System.out.println("");
+        String six = Keyboard.readString();
+        //Sixth question.
+        
+        if(six.equalsIgnoreCase("B")){score++; array[5] = "You Got Question 6 Correct";
+        }else array[5] = "The Correct Answer To Question 6 Was 'B: Favourites List'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 7: Which Of The Following Is A Presentation Program?");
+        System.out.println("");
+        System.out.println("A: Ms-Word");
+        System.out.println("B: Ms-Excel");
+        System.out.println("C: Ms-Powerpoint");
+        System.out.println("D: Ms-Access");
+        System.out.println("");
+        String seven = Keyboard.readString();
+        //Seventh question.
+        
+        if(seven.equalsIgnoreCase("C")){score++; array[6] = "You Got Question 7 Correct";
+        }else array[6] = "The Correct Answer To Question 7 Was 'C: Ms-Powerpoint'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 8: ISP Stands For:");
+        System.out.println("");
+        System.out.println("A: International Service Provider");
+        System.out.println("B: Internet Service Provider");
+        System.out.println("C: Internet Service Presenter");
+        System.out.println("D: None Of The Above");
+        System.out.println("");
+        String eight = Keyboard.readString();
+        //Eight question.
+        
+        if(eight.equalsIgnoreCase("B")){score++; array[7] = "You Got Question 8 Correct";
+        }else array[7] = "The Correct Answer To Question 8 Was 'B: Internet Service Provider'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 9: A Bit Stands For:");
+        System.out.println("");
+        System.out.println("A: Binary Digit");
+        System.out.println("B: Binary Data");
+        System.out.println("C: Binary Deci");
+        System.out.println("D: None Of The Above");
+        System.out.println("");
+        String nine = Keyboard.readString();
+        //Ninth question.
+        
+        if(nine.equalsIgnoreCase("A")){score++; array[8] = "You Got Question 9 Correct";
+        }else array[8] = "The Correct Answer To Question 9 Was 'A: Binary Digit'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("Question 10: Collection Of 1024 Bytes:");
+        System.out.println("");
+        System.out.println("A: 1MB");
+        System.out.println("B: 1KB");
+        System.out.println("C: 1TB");
+        System.out.println("D: 1GB");
+        System.out.println("");
+        String ten = Keyboard.readString();
+        //Tenth question.
+        
+        if(ten.equalsIgnoreCase("B")){score++; array[9] = "You Got Question 10 Correct";
+        }else array[9] = "The Correct Answer To Question 10 Was 'B: 1KB'";
+        //If statement on the letter typed by the user.
+        System.out.println("");
+        System.out.println("You Got "+score+"/10 Correct");
+        System.out.println("");
+        //Tells the user the score that they got.
+        if(score>=5)System.out.println("You Passed");
+        else System.out.println("You Failed");
+        System.out.println("");
+        //Tells the user whether they passed or not.
+        do{
+            System.out.println("1. View Results.");
+            System.out.println("2. Exit.");
+            choiceTwo = Keyboard.readInt();
+            switch(choiceTwo){
+                case 1:
+        
+            System.out.println(array[0]);
+            System.out.println(array[1]);
+            System.out.println(array[2]);
+            System.out.println(array[3]);
+            System.out.println(array[4]);
+            System.out.println(array[5]);
+            System.out.println(array[6]);
+            System.out.println(array[7]);
+            System.out.println(array[8]);
+            System.out.println(array[9]);
+            choiceTwo = 2;
+            break;
+            
+            case 2:
+            System.out.println("Exiting...");
+            break;
+        }
+    }while(choiceTwo!=2);
+        
+        choiceOne = 2;
+        break;
+        //Stops the program after the user finishes the quiz.
+        case 2:
+        System.out.print("Exiting...");
+        break;
+        //Stops the program.
+        default: System.out.println("That Is Not A Command That I Recognize, Restarting Program...");
+        System.out.println("");
+        break;
+       }
+      }while(choiceOne!=2);
+   }
+}
